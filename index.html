@@ -5,8 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sp Chopeiras</title>
     <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="clash-display.css"/>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="clash-display.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
+    />
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
@@ -17,89 +20,74 @@
       integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr"
       crossorigin="anonymous"
     />
+    <link
+      href="https://cdn.jsdelivr.net/npm/pagedone@1.2.2/src/css/pagedone.css "
+      rel="stylesheet"
+    />
   </head>
   <body>
-    <header>
-      <nav class="navbar navbar-expand-lg">
-        <div class="container-fluid">
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarNavDropdown"
-            aria-controls="navbarNavDropdown"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNavDropdown">
-            <ul class="navbar-nav">
-              <li class="nav-item">
-                <a
-                  class="nav-link active"
-                  aria-current="page"
-                  href="#"
-                  style="color: white"
-                  >Home</a
+    <header id="header">
+      <img src="assets/imagens/logo-sp.png" alt="">
+      <nav>
+        <ul class="menu-links">
+          <li class="nav-link"><a href="/index.html">Home</a></li>
+          <div class="dropdown">
+            <a
+              class="btn dropdown-toggle"
+              href="#"
+              role="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+              style="color: white"
+            >
+              Produtos
+            </a>
+
+            <ul class="dropdown-menu">
+              <li>
+                <a class="dropdown-item" href="/components/chopeiras.html"
+                  >Chopeiras</a
                 >
               </li>
-
-              <li class="nav-item dropdown">
-                <a
-                  class="nav-link dropdown-toggle"
-                  href="#"
-                  role="button"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                  style="color: white"
+              <li><a class="dropdown-item" href="/components/acessorios.html">Acessórios</a></li>
+              <li>
+                <a class="dropdown-item" href="/components/adegas.html"
+                  >Adegas Climatizada</a
                 >
-                  Produtos
-                </a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Chopeiras</a></li>
-                  <li><a class="dropdown-item" href="#">Adegas Climatizadas</a></li>
-                  <li><a class="dropdown-item" href="#">Infraestrutura</a></li>
-                  <li><a class="dropdown-item" href="#">Balcões</a></li>
-                  <li><a class="dropdown-item" href="#">Acessórios</a></li>
-                </ul>
-              </li>
-
-              <li class="nav-item">
-                <a class="nav-link" href="#" style="color: white">Sobre nos</a>
-              </li>
-
-              <li class="nav-item">
-                <a class="nav-link" href="#" style="color: white">Contato</a>
               </li>
             </ul>
           </div>
-        </div>
+          <li class="nav-link">
+            <a href="/components/sobre.html">Sobre Nos</a>
+          </li>
+          <li class="nav-link"><a href="components/contato.html">Contato</a></li>
+        </ul>
       </nav>
     </header>
 
-    <div class="swiper swiper2 mySwiper mySwiper2">
-      <div class="swiper-wrapper">
-        <div class="swiper-slide swiper-slide2">
+    <div class="swiper swiper2 mySwiper mySwiper2" style="height: 100vh">
+      <div class="swiper-wrapper" style="height: 100vh">
+        <div class="swiper-slide swiper-slide2" style="height: 100vh">
           <div class="txt-carroussel">
             <h1>
-              Elegância, praticidade<br />
-              e presença.
+              Design que encanta,<br />
+              desempenho que conquista.
             </h1>
-            <p>Adquira já sua chopeira</p>
+            <p>Conheça nossas chopeiras que unem estilo e funcionalidade.</p>
             <button class="btn9"><a href="#"></a></button>
           </div>
         </div>
 
-        <div class="swiper-slide swiper-slide2">
-          <div class="txt-carroussel">
-            <h1>Slide 1</h1>
-            <p>Adquira já sua chopeira</p>
+        <div class="swiper-slide swiper-slide2 swiper-slide3" style="height: 100vh; display: flex; justify-content: center;">
+
+          <div class="txt-carroussel txt-carroussel2">
+            <h1>Tecnologia, pressão e<br> temperatura perfeitas.</h1>
+            <p>Nossas chopeiras entregam a cremosidade e o frescor que seu chope merece.</p>
           </div>
         </div>
       </div>
-      <div class="swiper-button-next" style="color: white;"></div>
-      <div class="swiper-button-prev" style="color: white;"></div>
+      <div class="swiper-button-next" style="color: white"></div>
+      <div class="swiper-button-prev" style="color: white"></div>
       <div class="swiper-pagination2 swiper-pagination"></div>
     </div>
 
@@ -118,10 +106,12 @@
           />
           <div class="card-body">
             <h3>Chopeira Naja 1 via</h3>
-            <p class="card-text">
+            <p class="card-text" style="color: white">
               Se você gosta de reunir-se com charme, essa chopeira é a ideal.
             </p>
-            <a href="#">Veja todos os modelos <i class="bi bi-arrow-right"></i></a>
+            <a href="/components/chopeiras.html"
+              >Veja todos os modelos <i class="bi bi-arrow-right"></i
+            ></a>
           </div>
         </div>
         <div class="card" style="width: 30rem; height: 43rem">
@@ -132,10 +122,13 @@
           />
           <div class="card-body">
             <h3>Chopeira Tubular 4 vias</h3>
-            <p class="card-text">
-              Modelo ideial para você que busca praticidade<br> e eficiência.
+            <p class="card-text" style="color: white">
+              Modelo ideial para você que busca praticidade<br />
+              e eficiência.
             </p>
-            <a href="#">Veja todos os modelos <i class="bi bi-arrow-right"></i></a>
+            <a href="/components/chopeiras.html"
+              >Veja todos os modelos <i class="bi bi-arrow-right"></i
+            ></a>
           </div>
         </div>
         <div class="card" style="width: 30rem; height: 43rem">
@@ -146,15 +139,18 @@
           />
           <div class="card-body">
             <h3>Chopeira Naja 2 vias</h3>
-            <p class="card-text">
+            <p class="card-text" style="color: white">
               Design moderno com duas vias, ideal para quem quer chope gelado em
               casa com praticidade.
             </p>
-            <a href="#">Veja todos os modelos <i class="bi bi-arrow-right"></i></a>
+            <a href="/components/chopeiras.html"
+              >Veja todos os modelos <i class="bi bi-arrow-right"></i
+            ></a>
           </div>
         </div>
       </div>
     </section>
+
     <section class="s-cta">
       <div class="txt-s-cta">
         <h2>
@@ -163,7 +159,7 @@
         </h2>
         <p>Descubra o modelo ideal para você. Escolha agora mesmo!</p>
         <div class="btn-modelos">
-          <a href="#">
+          <a href="/components/chopeiras.html">
             Ver modelos disponíveis
             <span class="arrow">→</span>
           </a>
@@ -171,9 +167,10 @@
       </div>
     </section>
 
-     <div class="box-brilho2">
-        <div class="brilho3" style="position: absolute;"></div>
-      </div>
+    <div class="box-brilho2">
+      <div class="brilho3" style="position: absolute"></div>
+    </div>
+
     <section class="etapas js-etapas-selection">
       <h2 class="titulo-principal">
         Veja as etapas do seu pedido<br />
@@ -189,7 +186,7 @@
             completa.
           </p>
         </div>
-        
+
         <div class="etapa etapa2">
           <div class="numero">02</div>
           <h3 class="etapa-titulo">Preparação e Personalização</h3>
@@ -198,7 +195,7 @@
             configurações personalizadas para o seu projeto.
           </p>
         </div>
-        <div class="brilho4" style="position: absolute;"></div>
+        <div class="brilho4" style="position: absolute"></div>
         <div class="etapa etapa3">
           <div class="numero">03</div>
           <h3 class="etapa-titulo">Verificação de Qualidade</h3>
@@ -215,9 +212,9 @@
             rastreio, garantindo agilidade e tranquilidade na entrega.
           </p>
         </div>
-         <div class="box-brilho">
-        <div class="brilho3 brilho4" style="position: absolute;"></div>
-      </div>
+        <div class="box-brilho">
+          <div class="brilho3 brilho4" style="position: absolute"></div>
+        </div>
         <div class="etapa etapa5">
           <div class="numero">05</div>
           <h3 class="etapa-titulo">Entrega e Pronto para Usar</h3>
@@ -228,25 +225,32 @@
         </div>
       </div>
     </section>
-    <div class="brilho4" style="position: absolute;"></div>
+
+    <div class="brilho4" style="position: absolute"></div>
+
     <section id="testimonials">
-      <h2 class="titulo-principal2">
-       Oque os clientes dizem
-        </h2>
-        <p class="p-principal">Quer saber o que torna nossa empresa tão especial? Confira<br> o que nossos clientes têm a dizer!</p>
-      <div class="container2">      
+      <h2 class="titulo-principal2">Oque os clientes dizem</h2>
+      <p class="p-principal">
+        Quer saber o que torna nossa empresa tão especial? Confira<br />
+        o que nossos clientes têm a dizer!
+      </p>
+      <div class="container2">
         <div class="testimonials-content">
           <div class="swiper testimonials-slider js-testimonials-slider">
             <div class="swiper-wrapper">
               <div class="swiper-slide testimonials-item">
                 <div class="info">
-                  <img src="img/logo-eletrecity300.png" alt="">
+                  <img src="img/logo-eletrecity300.png" alt="" />
                   <div class="text-box">
                     <h3 class="name">fulanostz</h3>
                     <span class="job">web developer</span>
                   </div>
                 </div>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iure sit, consectetur fugiat dicta veniam laboriosam magni dolorum distinctio quia repellendus.</p>
+                <p>
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iure
+                  sit, consectetur fugiat dicta veniam laboriosam magni dolorum
+                  distinctio quia repellendus.
+                </p>
                 <div class="rating">
                   <i class="bi bi-star-fill"></i>
                   <i class="bi bi-star-fill"></i>
@@ -257,29 +261,17 @@
               </div>
               <div class="swiper-slide testimonials-item">
                 <div class="info">
-                  <img src="img/logo-eletrecity300.png" alt="">
+                  <img src="img/logo-eletrecity300.png" alt="" />
                   <div class="text-box">
                     <h3 class="name">fulanostz</h3>
                     <span class="job">web developer</span>
                   </div>
                 </div>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iure sit, consectetur fugiat dicta veniam laboriosam magni dolorum distinctio quia repellendus.</p>
-                <div class="rating">
-                  <i class="bi bi-star-fill"></i>
-                  <i class="bi bi-star-fill"></i>
-                  <i class="bi bi-star-fill"></i>
-                  <i class="bi bi-star-fill"></i>
-                  <i class="bi bi-star-fill"></i>
-                </div>
-              </div><div class="swiper-slide testimonials-item">
-                <div class="info">
-                  <img src="img/logo-eletrecity300.png" alt="">
-                  <div class="text-box">
-                    <h3 class="name">fulanostz</h3>
-                    <span class="job">web developer</span>
-                  </div>
-                </div>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iure sit, consectetur fugiat dicta veniam laboriosam magni dolorum distinctio quia repellendus.</p>
+                <p>
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iure
+                  sit, consectetur fugiat dicta veniam laboriosam magni dolorum
+                  distinctio quia repellendus.
+                </p>
                 <div class="rating">
                   <i class="bi bi-star-fill"></i>
                   <i class="bi bi-star-fill"></i>
@@ -290,13 +282,17 @@
               </div>
               <div class="swiper-slide testimonials-item">
                 <div class="info">
-                  <img src="img/logo-eletrecity300.png" alt="">
+                  <img src="img/logo-eletrecity300.png" alt="" />
                   <div class="text-box">
                     <h3 class="name">fulanostz</h3>
                     <span class="job">web developer</span>
                   </div>
                 </div>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iure sit, consectetur fugiat dicta veniam laboriosam magni dolorum distinctio quia repellendus.</p>
+                <p>
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iure
+                  sit, consectetur fugiat dicta veniam laboriosam magni dolorum
+                  distinctio quia repellendus.
+                </p>
                 <div class="rating">
                   <i class="bi bi-star-fill"></i>
                   <i class="bi bi-star-fill"></i>
@@ -307,13 +303,17 @@
               </div>
               <div class="swiper-slide testimonials-item">
                 <div class="info">
-                  <img src="img/logo-eletrecity300.png" alt="">
+                  <img src="img/logo-eletrecity300.png" alt="" />
                   <div class="text-box">
                     <h3 class="name">fulanostz</h3>
                     <span class="job">web developer</span>
                   </div>
                 </div>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iure sit, consectetur fugiat dicta veniam laboriosam magni dolorum distinctio quia repellendus.</p>
+                <p>
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iure
+                  sit, consectetur fugiat dicta veniam laboriosam magni dolorum
+                  distinctio quia repellendus.
+                </p>
                 <div class="rating">
                   <i class="bi bi-star-fill"></i>
                   <i class="bi bi-star-fill"></i>
@@ -324,13 +324,17 @@
               </div>
               <div class="swiper-slide testimonials-item">
                 <div class="info">
-                  <img src="img/logo-eletrecity300.png" alt="">
+                  <img src="img/logo-eletrecity300.png" alt="" />
                   <div class="text-box">
                     <h3 class="name">fulanostz</h3>
                     <span class="job">web developer</span>
                   </div>
                 </div>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iure sit, consectetur fugiat dicta veniam laboriosam magni dolorum distinctio quia repellendus.</p>
+                <p>
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iure
+                  sit, consectetur fugiat dicta veniam laboriosam magni dolorum
+                  distinctio quia repellendus.
+                </p>
                 <div class="rating">
                   <i class="bi bi-star-fill"></i>
                   <i class="bi bi-star-fill"></i>
@@ -341,13 +345,38 @@
               </div>
               <div class="swiper-slide testimonials-item">
                 <div class="info">
-                  <img src="img/logo-eletrecity300.png" alt="">
+                  <img src="img/logo-eletrecity300.png" alt="" />
                   <div class="text-box">
                     <h3 class="name">fulanostz</h3>
                     <span class="job">web developer</span>
                   </div>
                 </div>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iure sit, consectetur fugiat dicta veniam laboriosam magni dolorum distinctio quia repellendus.</p>
+                <p>
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iure
+                  sit, consectetur fugiat dicta veniam laboriosam magni dolorum
+                  distinctio quia repellendus.
+                </p>
+                <div class="rating">
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                </div>
+              </div>
+              <div class="swiper-slide testimonials-item">
+                <div class="info">
+                  <img src="img/logo-eletrecity300.png" alt="" />
+                  <div class="text-box">
+                    <h3 class="name">fulanostz</h3>
+                    <span class="job">web developer</span>
+                  </div>
+                </div>
+                <p>
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iure
+                  sit, consectetur fugiat dicta veniam laboriosam magni dolorum
+                  distinctio quia repellendus.
+                </p>
                 <div class="rating">
                   <i class="bi bi-star-fill"></i>
                   <i class="bi bi-star-fill"></i>
@@ -357,64 +386,82 @@
                 </div>
               </div>
             </div>
-          </div>      
+          </div>
         </div>
       </div>
     </section>
-  </section>
 
-  <footer>
-    <img src="assets/imagens/image 7.png" alt="">
-    <div class="newsletter">
-      <h4>Join a Newsletter</h4>
+    <div class="button-zap">
+      <a
+        href="https://api.whatsapp.com/send?phone=16982142864"
+        class="icon"
+        target="_blank"
+        ><i class="bi bi-whatsapp"></i
+      ></a>
     </div>
-    <div class="box-footer">
-      <ul class="links-footer link-espacamento">
-        <h5> Links Rápidos</h5>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Sobre</a></li>
-        <li><a href="#">Chopeiras</a></li>
-        <li><a href="#">Acessórios</a></li>
-        <li><a href="#">Projetos</a></li>
-        <li><a href="#">Contatos</a></li>
-      </ul>
-       <ul class="links-footer">
-        <h5>Resources</h5>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Teste</a></li>
-        <li><a href="#">Teste</a></li>
-        <li><a href="#">Teste</a></li>
-        <li><a href="#">Teste</a></li>
-        <li><a href="#">Teste</a></li>
-      </ul>
+
+    <footer>
+      <img src="assets/imagens/image 7.png" alt="" />
+      <div class="newsletter">
+        <h4>Join a Newsletter</h4>
+      </div>
+      <div class="box-footer">
+        <ul class="links-footer link-espacamento">
+          <h5>Links Rápidos</h5>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Sobre</a></li>
+          <li><a href="#">Chopeiras</a></li>
+          <li><a href="#">Acessórios</a></li>
+          <li><a href="#">Projetos</a></li>
+          <li><a href="#">Contatos</a></li>
+        </ul>
+        <ul class="links-footer">
+          <h5>Resources</h5>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Teste</a></li>
+          <li><a href="#">Teste</a></li>
+          <li><a href="#">Teste</a></li>
+          <li><a href="#">Teste</a></li>
+          <li><a href="#">Teste</a></li>
+        </ul>
+      </div>
+      <div class="txt-footer">
+        <h4>Sp Chopeiras</h4>
+        <p>
+          Seja bem-vindo as Sp Chopeiras, <br />trabalhamos intensamente para<br />
+          garantir a melhor experiência <br />para você.
+        </p>
+      </div>
+    </footer>
+
+    <div class="links-rodape-footer">
+      <div class="box-links">
+        <i class="bi bi-geo-alt-fill"></i>
+        <a href="#"
+          >Av. Eduardo Toniello 916, Jd Grande Aliança <br />Cep: 14.161-310,
+          Sertãozinho - SP</a
+        >
+      </div>
+      <div class="box-links">
+        <i class="bi bi-envelope"></i>
+        <a href="#"
+          >contato@spchopeiras.com.br<br />
+          vendas@spchopeiras.com.br</a
+        >
+      </div>
+      <div class="box-links">
+        <i class="bi bi-telephone"></i>
+        <a href="#"
+          >(16) 99408-4889<br />
+          (16) 99795-4261</a
+        >
+      </div>
     </div>
-    <div class="txt-footer">
-      <h4>Sp Chopeiras</h4>
-      <p>Seja bem-vindo as Sp Chopeiras, <br>trabalhamos intensamente para<br> garantir a melhor experiência <br>para você.</p>
-    </div>
-  </footer>
-  <div class="links-rodape-footer">
-    <div class="box-links">
-      <i class="bi bi-geo-alt-fill"></i>
-      <a href="#">Av. Eduardo Toniello 916, Jd Grande Aliança <br>Cep: 14.161-310, Sertãozinho - SP</a>
-    </div>
-    <div class="box-links">
-      <i class="bi bi-envelope"></i>
-      <a href="#">contato@spchopeiras.com.br<br>
-vendas@spchopeiras.com.br</a>
-    </div>
-    <div class="box-links">
-      <i class="bi bi-telephone"></i>
-      <a href="#">(16) 99408-4889<br>
-(16) 99795-4261</a>
-    </div>
-  </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/pagedone@1.2.2/src/js/pagedone.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
-    <script
-    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
-    crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="swiper.js"></script>
     <script src="gsap.js"></script>

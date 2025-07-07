@@ -25,6 +25,14 @@ const swiper2 = new Swiper(".mySwiper2", {
   slidesPerView: 1,
   spaceBetween: 30,
   loop: true,
+     effect: 'fade', // Efeito suave
+    fadeEffect: {
+      crossFade: true, // Mistura os slides ao trocar
+    },
+  autoplay: {
+    delay: 6000, // 2 segundos
+    disableOnInteraction: false, // continua mesmo se o usuário interagir
+  },
   pagination: {
     el: ".swiper-pagination2",
     clickable: true,
